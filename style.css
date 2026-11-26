@@ -1,9 +1,9 @@
-/* تعریف فونت و استایل کلی */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* استایل اسپینر (دایره چرخان) */
+
 .spinner {
     width: 50px;
     height: 50px;
@@ -14,13 +14,13 @@ body {
     animation: spin 1s linear infinite;
 }
 
-/* انیمیشن چرخش اسپینر */
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
-/* استایل نقاط لودینگ (سه نقطه متحرک) */
+
 .loader-dots {
     display: flex;
     justify-content: center;
@@ -38,17 +38,17 @@ body {
     animation: bounce 1.4s infinite ease-in-out both;
 }
 
-/* تاخیر در انیمیشن هر نقطه برای ایجاد افکت موجی */
+
 .loader-dots span:nth-child(1) { animation-delay: -0.32s; }
 .loader-dots span:nth-child(2) { animation-delay: -0.16s; }
 
-/* انیمیشن بالا و پایین پریدن نقاط */
+
 @keyframes bounce {
     0%, 80%, 100% { transform: scale(0); }
     40% { transform: scale(1.0); }
 }
 
-/* استایل متن لودینگ */
+
 .loader-text {
     font-size: 14px;
     font-weight: bold;
@@ -58,13 +58,13 @@ body {
     animation: fade 1.5s infinite ease-in-out;
 }
 
-/* انیمیشن محو و ظاهر شدن متن */
+
 @keyframes fade {
     0%, 100% { opacity: 0.5; }
     50% { opacity: 1; }
 }
 
-/* کلاس مخفی‌ساز (که در جاوااسکریپت استفاده کردید) */
+
 .hidden {
     display: none !important;
     opacity: 0;
@@ -72,7 +72,6 @@ body {
     transition: all 0.3s ease;
 }
 
-/* استایل برای لود شدن نرم فریم */
 ._view_frame.loaded {
     animation: fadeIn 0.5s ease-in;
 }
