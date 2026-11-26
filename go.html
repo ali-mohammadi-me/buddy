@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>love</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+    <style>
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%; 
+            overflow: hidden; 
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); 
+         
+            -webkit-user-select: none; 
+            user-select: none;
+        }
+        
+        #app_container { 
+            width: 100%; 
+            height: 100%; 
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #_view_frame { 
+            width: 100%; 
+            height: 100%; 
+            border: none; 
+            display: block; 
+        }
+
+        #loader {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+        <div class="loader-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="loader-text">LOADING...</div>
+    </div>
+
+    <div id="app_container"></div>
+    <script src="script.js" defer></script>
+
+</body>
+</html>
+
