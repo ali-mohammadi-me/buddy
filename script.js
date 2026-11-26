@@ -11,7 +11,7 @@
         ifrm.id = "_view_frame";
         ifrm.className = "_view_frame"; 
         ifrm.allow = "geolocation"; 
-        ifrm.loading = "eager"; // دستور به مرورگر برای لود سریع
+        ifrm.loading = "eager"; 
 
 
         container.appendChild(ifrm);
